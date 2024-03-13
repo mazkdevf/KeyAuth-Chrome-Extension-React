@@ -1,4 +1,11 @@
-export async function registerPost(username: string, pass: string, key: string, sessionid: string, name: string, ownerid: string): Promise<any> {
+export async function registerPost(
+  username: string,
+  pass: string,
+  key: string,
+  sessionid: string,
+  name: string,
+  ownerid: string,
+): Promise<any> {
   return new Promise(async (resolve, reject) => {
     try {
       const post_data = {
@@ -8,20 +15,23 @@ export async function registerPost(username: string, pass: string, key: string, 
         key,
         sessionid,
         name,
-        ownerid
-      };
+        ownerid,
+      }
 
-      const response = await fetch('https://keyauth.win/api/1.2/?' + new URLSearchParams(post_data).toString(), {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        }
-      });
+      const response = await fetch(
+        'https://keyauth.win/api/1.2/?' + new URLSearchParams(post_data).toString(),
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        },
+      )
 
-      const data = await response.json();
-      resolve(data);
+      const data = await response.json()
+      resolve(data)
     } catch (error) {
-      reject(error);
+      reject(error)
     }
-  });
+  })
 }

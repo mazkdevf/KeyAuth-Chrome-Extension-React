@@ -3,6 +3,7 @@
 > a chrome extension tools built with Vite + Vanilla + TypeScript, and Manifest v3
 
 > Shows how to do requests to server side (keyauth.win) nothing else really. Template generated with `npx create-chrome-ext`. New Ui will come in future.
+
 ## Installing
 
 1. Check if your `Node.js` version is >= **14**.
@@ -26,6 +27,7 @@ $ cd KeyAuth-Chrome-Extension-React
 ```
 
 1. Change Application Credentials in `package.json` > `KeyAuth`
+
 ```json
   "KeyAuth": {
     "AppName": "",
