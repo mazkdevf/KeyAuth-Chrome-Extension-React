@@ -1,14 +1,12 @@
-# KeyAuth-Chrome-Extension React
+# KeyAuth-Chrome-Extension in React
+- A Chrome extension tool built with Vite, TypeScript, and TailwindCSS utilizing Manifest v3.
+- Demonstrates how to execute requests to the server-side (keyauth.win), focusing primarily on this functionality.
 
-> a chrome extension tools built with Vite + Vanilla + TypeScript, and Manifest v3
+## Installation
 
-> Shows how to do requests to server side (keyauth.win) nothing else really. Template generated with `npx create-chrome-ext`. New Ui will come in future.
-
-## Installing
-
-1. Check if your `Node.js` version is >= **14**.
-2. Change or configurate the name of your extension on `src/manifest`.
-3. Run `npm install` to install the dependencies.
+1. Ensure that your `Node.js` version is **14** or higher.
+2. Modify or configure the name of your extension in `src/manifest`.
+3. Execute `npm install` to install the necessary dependencies.
 
 ## Preview
 
